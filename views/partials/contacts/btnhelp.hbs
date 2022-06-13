@@ -1,0 +1,43 @@
+{{!-- 
+    Partial: Button Help + Modal
+ --}}
+
+
+
+  <!-- Button HELP -->
+    <div>
+        <div class="d-flex justify-content-end fixed-bottom me-4 mb-4">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-light rounded-circle " data-bs-toggle="modal"
+                data-bs-target="#chatmodal" >
+                <!-- <i class="fa-solid fa-message fa-2x"></i> -->
+                <i class="fa-solid fa-comment-dots fa-flip fa-2x" style="--fa-animation-duration: 5s;"></i>
+            </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="chatmodal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="exampleModalLabel">Send a Message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="exampleFor0mControlInput1" class="form-label text-dark">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="solobruno@example.com">
+                        <label for="exampleFormControlInput1" class="form-label text-dark">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Solo">
+                        <label for="exampleFormControlInput1" class="form-label text-dark">Surname</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Bruno">
+                        <label for="exampleFormControlInput1" class="form-label text-dark">Message</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Message">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Abandon</button>
+                        <button type="button" class="btn btn-outline-dark">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

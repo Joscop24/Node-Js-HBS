@@ -1,0 +1,68 @@
+{{!-- 
+    Page: Navbar
+ --}}
+
+ 
+<!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Teslouche</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </a>
+                        <ul class="dropdown-menu text-bg-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                            <li><a class="dropdown-item text-white" href="/contacts">Contacts</a></li>
+                            <li>
+                                <hr class="dropdown-divider text-white">
+                            </li>
+                            <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#connectmodal">
+                    Connection
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="connectmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark" id="exampleModalLabel">Se Connecter</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label for="exampleFormControlInput1" class="form-label text-dark">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                <label for="exampleFormControlInput1" class="form-label text-dark">Password</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger"
+                                    data-bs-dismiss="modal">Close/Ferme</button>
+                                <button type="button" class="btn btn-outline-dark">Connect</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- //NavBar -->
